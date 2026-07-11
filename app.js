@@ -41,7 +41,7 @@ try{
 
 function displayWeather(data){
   document.getElementById('cityName').textContent = data.name;
-  document.getElementById('temp').textContent = `${Math.round(data.main.feels_like)}°C`;
+  document.getElementById('temp').textContent = `${Math.round(data.main)}°C`;
   document.getElementById('description').textContent = `${data.weather[0].description}`;
 
   cityInput.value = '';
